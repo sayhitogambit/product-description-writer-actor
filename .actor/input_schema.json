@@ -3,15 +3,15 @@
   "type": "object",
   "schemaVersion": 1,
   "properties": {
-    "productName": {"title": "Product Name", "type": "string", "minLength": 1},
-    "features": {"title": "Product Features", "type": "array", "editor": "stringList", "default": []},
-    "targetAudience": {"title": "Target Audience", "type": "string", "default": "general consumers"},
-    "brand": {"title": "Brand Name", "type": "string", "default": ""},
-    "category": {"title": "Product Category", "type": "string", "default": ""},
-    "tone": {"title": "Writing Tone", "type": "string", "enum": ["professional", "casual", "luxury", "friendly"], "default": "professional"},
-    "length": {"title": "Description Length", "type": "string", "enum": ["short", "medium", "long"], "default": "medium"},
-    "model": {"title": "AI Model", "type": "string", "enum": ["openai/gpt-4o-mini", "google/gemini-2.0-flash-exp:free"], "default": "google/gemini-2.0-flash-exp:free"},
-    "openrouterApiKey": {"title": "OpenRouter API Key", "type": "string", "isSecret": true}
+    "productName": {"title": "Product Name", "type": "string", "description": "Name of the product to describe", "minLength": 1},
+    "features": {"title": "Product Features", "type": "array", "description": "List of key product features and benefits", "editor": "stringList", "default": []},
+    "targetAudience": {"title": "Target Audience", "type": "string", "description": "Intended customer demographic or market segment", "default": "general consumers"},
+    "brand": {"title": "Brand Name", "type": "string", "description": "Brand name to include in the description", "default": ""},
+    "category": {"title": "Product Category", "type": "string", "description": "Product category or type", "default": ""},
+    "tone": {"title": "Writing Tone", "type": "string", "description": "The tone and style of writing for the description", "enum": ["professional", "casual", "luxury", "friendly"], "default": "professional"},
+    "length": {"title": "Description Length", "type": "string", "description": "Desired length of the product description", "enum": ["short", "medium", "long"], "default": "medium"},
+    "model": {"title": "AI Model", "type": "string", "description": "AI model to use for generation", "enum": ["openai/gpt-4o-mini", "google/gemini-2.0-flash-exp:free"], "default": "google/gemini-2.0-flash-exp:free"},
+    "openrouterApiKey": {"title": "OpenRouter API Key", "type": "string", "description": "Your OpenRouter API key from https://openrouter.ai/keys", "isSecret": true}
   },
   "required": ["productName", "openrouterApiKey"]
 }
