@@ -1,0 +1,24 @@
+{
+  "actorSpecification": 1,
+  "name": "product-description-writer",
+  "title": "AI Product Description Writer - OpenRouter",
+  "description": "Generate compelling product descriptions for e-commerce using AI. Create SEO-optimized, persuasive descriptions with features, benefits, and calls-to-action. Perfect for online stores, marketplaces, and dropshipping businesses.",
+  "version": "1.0.0",
+  "storages": {
+    "dataset": {
+      "actorSpecification": 1,
+      "title": "Product Descriptions",
+      "views": {
+        "overview": {
+          "title": "Overview",
+          "transformation": {
+            "fields": ["productName", "shortDescription", "fullDescription", "seoKeywords", "cost"]
+          }
+        }
+      }
+    }
+  },
+  "dockerfile": "./Dockerfile",
+  "input": "./.actor/input_schema.json",
+  "readme": "./README.md"
+}

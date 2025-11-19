@@ -1,0 +1,11 @@
+{
+  "productName": "Premium Wireless Headphones",
+  "features": ["Active Noise Cancellation", "40-hour battery", "Bluetooth 5.0"],
+  "targetAudience": "music enthusiasts and commuters",
+  "brand": "AudioPro",
+  "category": "Electronics",
+  "tone": "professional",
+  "length": "medium",
+  "model": "google/gemini-2.0-flash-exp:free",
+  "openrouterApiKey": "YOUR_OPENROUTER_API_KEY_HERE"
+}
