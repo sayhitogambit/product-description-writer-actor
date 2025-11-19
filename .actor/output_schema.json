@@ -1,0 +1,86 @@
+{
+  "title": "Product Description Writer Output",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "productName": {
+      "title": "Product Name",
+      "type": "string",
+      "description": "The name of the product",
+      "editor": "textfield"
+    },
+    "brand": {
+      "title": "Brand",
+      "type": "string",
+      "description": "The brand of the product",
+      "editor": "textfield"
+    },
+    "category": {
+      "title": "Category",
+      "type": "string",
+      "description": "The product category",
+      "editor": "textfield"
+    },
+    "shortDescription": {
+      "title": "Short Description",
+      "type": "string",
+      "description": "Brief description for product listings (100 characters)",
+      "editor": "textfield"
+    },
+    "fullDescription": {
+      "title": "Full Description",
+      "type": "string",
+      "description": "Full HTML formatted product description",
+      "editor": "textarea"
+    },
+    "bulletPoints": {
+      "title": "Bullet Points",
+      "type": "array",
+      "description": "Key features and benefits as bullet points",
+      "editor": "json",
+      "items": {
+        "type": "string"
+      }
+    },
+    "seoKeywords": {
+      "title": "SEO Keywords",
+      "type": "array",
+      "description": "SEO-optimized keywords for the product",
+      "editor": "json",
+      "items": {
+        "type": "string"
+      }
+    },
+    "callToAction": {
+      "title": "Call to Action",
+      "type": "string",
+      "description": "Suggested call-to-action text",
+      "editor": "textfield"
+    },
+    "cost": {
+      "title": "API Cost",
+      "type": "number",
+      "description": "Total API cost in USD",
+      "editor": "number"
+    },
+    "chargePrice": {
+      "title": "Charge Price",
+      "type": "number",
+      "description": "Price charged to user in USD",
+      "editor": "number"
+    },
+    "profit": {
+      "title": "Profit",
+      "type": "number",
+      "description": "Profit from this generation in USD",
+      "editor": "number"
+    },
+    "createdAt": {
+      "title": "Created At",
+      "type": "string",
+      "description": "ISO timestamp of when this was created",
+      "editor": "textfield",
+      "format": "date-time"
+    }
+  }
+}
